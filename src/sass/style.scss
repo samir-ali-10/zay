@@ -1,0 +1,28 @@
+@import "./helpers/variables";
+@import "./helpers/classes";
+
+@import "./layout/home";
+@import "./layout/about";
+@import "./layout/shop";
+@import "./layout/contact";
+
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

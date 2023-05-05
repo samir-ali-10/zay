@@ -1,0 +1,108 @@
+.secondary_color {
+  color: #59ab6e;
+}
+
+.special_bg {
+  background-color: #212934;
+}
+
+.secondary_bg {
+  background-color: #e9eef5;
+}
+
+.heading {
+  font-size: 0.8rem;
+}
+.heading a {
+  color: #e9eef5;
+}
+.heading .socials a {
+  margin-left: 15px;
+}
+
+.landing nav > * {
+  width: 30%;
+}
+.landing nav h2 {
+  font-size: 3.2rem;
+}
+.landing nav ul li a {
+  color: #777;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.landing nav ul li a:hover {
+  color: #59ab6e !important;
+}
+.landing nav ul.show {
+  height: 100%;
+  flex-direction: column;
+}
+.landing nav .profile a {
+  color: black;
+  font-size: 1.4rem;
+  position: relative;
+}
+.landing nav .profile a:nth-child(2)::before, .landing nav .profile a:nth-child(3)::before {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  width: fit-content;
+  padding: 0 5px;
+  background-color: #e9eef5;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.landing nav .profile a:nth-child(2)::before {
+  content: "7";
+}
+.landing nav .profile a:nth-child(3)::before {
+  content: "+99";
+}
+.landing .menu {
+  font-size: 1.5rem;
+  outline: none;
+  display: none;
+}
+
+@media (max-width: 992.5px) {
+  .landing .navigation ul {
+    height: 0;
+    overflow: hidden;
+  }
+  .landing .navigation .menu {
+    display: block;
+  }
+}
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
