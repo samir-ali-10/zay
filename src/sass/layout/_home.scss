@@ -90,6 +90,45 @@
         outline: none;
         display: none;
     }
+
+    .slider {
+        background-color: #efefef;
+        padding-top: 60px;
+        .carousel-indicators > * {
+            background-color: $secondaryColor;
+        }
+        .carousel-inner {
+            .carousel-item {
+                .info {
+                    .text {
+                        max-width: 30%;
+                        h2 {
+                            color: $secondaryColor;
+                            font-size: 2.6rem;
+                            span {
+                                padding-left: 10px;
+                                font-weight: normal;
+                            }
+                        }
+                        h3 {
+                            font-weight: normal;
+                        }
+                        p {
+                            font-size: 1.1rem;
+                            color: #777;
+                        }
+                    }
+                    img {
+                        width: 500px;
+                    }
+                }
+            }
+        }
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            color: $secondaryColor !important;
+        }
+    }
 }
 
 ///////////////////////////////// Media Queries /////////////////////////////////////////////
@@ -103,6 +142,17 @@
 
             .menu {
                 display: block;
+            }
+        }
+        .slider {
+            .carousel-inner {
+                .carousel-item {
+                    .info {
+                        img {
+                            width: 300px;
+                        }
+                    }
+                }
             }
         }
     }

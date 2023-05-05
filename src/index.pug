@@ -45,5 +45,44 @@ html
                         a(href="#").ms-4
                             i.fa-solid.fa-user
 
+            .slider 
+                .container 
+                    #carouselExampleIndicators.carousel.slide(data-bs-ride='true')
+                        .carousel-indicators
+                            button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                            button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+                            button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+                        .carousel-inner
+                            .carousel-item.active
+                                .info.d-flex.justify-content-evenly.align-items-center
+                                    .text 
+                                        h2 Zay
+                                            span eCommerce
+                                        h3 Tiny and Perfect eCommerce Template
+                                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores nisi non qui esse exercitationem eius. Amet repellendus consectetur aperiam unde eveniet laborum. Praesentium dolore tenetur quaerat doloribus, rem nulla ducimus.
+                                    img.d-block(src='/img/banner_img_01.jpg' alt='...')
+                            .carousel-item
+                                .info.d-flex.justify-content-evenly.align-items-center
+                                    .text 
+                                        h2 Zay 
+                                            span eCommerce
+                                        h3 Tiny and Perfect eCommerce Template
+                                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores nisi non qui esse exercitationem eius. Amet repellendus consectetur aperiam unde eveniet laborum. Praesentium dolore tenetur quaerat doloribus, rem nulla ducimus.
+                                    img.d-block(src='/img/banner_img_02.jpg' alt='...')
+                            .carousel-item
+                                .info.d-flex.justify-content-evenly.align-items-center
+                                    .text 
+                                        h2 Zay
+                                            span eCommerce
+                                        h3 Tiny and Perfect eCommerce Template
+                                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores nisi non qui esse exercitationem eius. Amet repellendus consectetur aperiam unde eveniet laborum. Praesentium dolore tenetur quaerat doloribus, rem nulla ducimus.
+                                    img.d-block(src='/img/banner_img_03.jpg' alt='...')
+                        button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.visually-hidden Previous
+                        button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.visually-hidden Next
 
+        script(src="js/bootstrap.bundle.min.js") 
         script(src="js/main.js") 
