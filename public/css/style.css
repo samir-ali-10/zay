@@ -10,6 +10,15 @@
   background-color: #e9eef5;
 }
 
+.special_heading h2 {
+  font-weight: 100;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+.special_heading p {
+  font-size: 1.1rem;
+}
+
 .heading {
   font-size: 0.8rem;
 }
@@ -107,6 +116,68 @@
   color: #59ab6e !important;
 }
 
+.categories .items {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+}
+.categories .items .item img {
+  max-width: 300px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.categories .items .item a {
+  background-color: #59ab6e;
+  color: white;
+  text-transform: capitalize;
+  padding: 5px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.features .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+}
+.features .cards .carde {
+  background-color: white;
+  max-width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.features .cards .carde img {
+  max-width: 400px;
+}
+.features .cards .carde .content .rating .stars i {
+  font-size: 1.1rem;
+  padding-right: 5px;
+}
+.features .cards .carde .content .rating p {
+  font-size: 1.3rem;
+  color: #777;
+}
+.features .cards .carde .content h3 {
+  font-weight: 200;
+}
+.features .cards .carde .content p {
+  font-size: 1.1rem;
+}
+.features .cards .carde .content .review p {
+  color: #777;
+}
+
 @media (max-width: 992.5px) {
   .landing .navigation ul {
     height: 0;
@@ -119,6 +190,17 @@
     width: 300px;
   }
 }
+@media (max-width: 450px) {
+  .features .cards .carde {
+    max-width: 300px;
+  }
+  .features .cards .carde img {
+    max-width: 300px;
+  }
+  .categories .items .item img {
+    max-width: 250px;
+  }
+}
 :root {
   scroll-behavior: smooth;
 }
@@ -129,6 +211,7 @@
 
 body {
   margin: 0;
+  height: 5000px;
 }
 
 a {

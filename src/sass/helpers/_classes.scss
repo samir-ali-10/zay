@@ -9,3 +9,14 @@
 .secondary_bg {
     background-color: $secondaryBgColor;
 }
+
+.special_heading {
+    h2 {
+        font-weight: 100;
+        font-size: 3.5rem;
+        text-transform: capitalize;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+}

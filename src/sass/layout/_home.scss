@@ -94,39 +94,132 @@
     .slider {
         background-color: #efefef;
         padding-top: 60px;
-        .carousel-indicators > * {
+
+        .carousel-indicators>* {
             background-color: $secondaryColor;
         }
+
         .carousel-inner {
             .carousel-item {
                 .info {
                     .text {
                         max-width: 30%;
+
                         h2 {
                             color: $secondaryColor;
                             font-size: 2.6rem;
+
                             span {
                                 padding-left: 10px;
                                 font-weight: normal;
                             }
                         }
+
                         h3 {
                             font-weight: normal;
                         }
+
                         p {
                             font-size: 1.1rem;
                             color: #777;
                         }
                     }
+
                     img {
                         width: 500px;
                     }
                 }
             }
         }
+
         .carousel-control-next-icon,
         .carousel-control-prev-icon {
             color: $secondaryColor !important;
+        }
+    }
+}
+
+.categories {
+    .items {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+
+        .item {
+            img {
+                max-width: 300px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+
+            a {
+                background-color: $secondaryColor;
+                color: white;
+                text-transform: capitalize;
+                padding: 5px 15px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.features {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+
+        .carde {
+            background-color: white;
+            max-width: 400px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            overflow: hidden;
+            margin: 0 auto;
+
+            img {
+                max-width: 400px;
+            }
+
+            .content {
+                .rating {
+                    .stars {
+                        i {
+                            font-size: 1.1rem;
+                            padding-right: 5px;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.3rem;
+                        color: #777;
+                    }
+                }
+
+                h3 {
+                    font-weight: 200;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+
+                .review {
+                    p {
+                        color: #777;
+                    }
+                }
+            }
         }
     }
 }
@@ -144,6 +237,7 @@
                 display: block;
             }
         }
+
         .slider {
             .carousel-inner {
                 .carousel-item {
@@ -152,6 +246,32 @@
                             width: 300px;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .features {
+        .cards {
+    
+            .carde {
+                max-width: 300px;
+    
+                img {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+
+    .categories {
+        .items {
+    
+            .item {
+                img {
+                    max-width: 250px;
                 }
             }
         }
