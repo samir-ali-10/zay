@@ -16,7 +16,32 @@
         font-size: 3.5rem;
         text-transform: capitalize;
     }
+
     p {
         font-size: 1.1rem;
     }
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: $specialBgColor;
+    color: $secondaryBgColor;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#myBtn:hover {
+    background-color: #555;
 }

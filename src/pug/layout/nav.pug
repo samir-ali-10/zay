@@ -1,0 +1,81 @@
+        .heading.special_bg.p-2
+            .container.d-flex.justify-content-between.align-items-center
+                .infos
+                    a(href='#')
+                        i.fa-solid.fa-envelope.pe-2
+                        |     info@company.com
+                    a(href="#").ms-5
+                        i.fa-solid.fa-phone.pe-2
+                        | 010-203-3493
+                .socials
+                    a(href="#")
+                        i.fa-brands.fa-facebook-f
+                    a(href="#")
+                        i.fa-brands.fa-instagram
+                    a(href="#")
+                        i.fa-brands.fa-twitter
+                    a(href="#")
+                        i.fa-brands.fa-linkedin
+
+        // Landing Page //
+        .landing.pt-3
+            .container 
+                nav.d-flex.justify-content-between.align-items-center
+                    h2.secondary_color Zay 
+                    .navigation 
+                        i.fa-solid.fa-bars.menu
+                        ul.d-flex.justify-content-between
+                            li
+                                a(href="#") home
+                            li
+                                a(href="#") about
+                            li
+                                a(href="#") shop
+                            li
+                                a(href="#") contact
+                    .profile.d-flex.justify-content-end
+                        a(href="#")
+                            i.fa-solid.fa-magnifying-glass
+                        a(href="#").ms-4
+                            i.fa-solid.fa-cart-arrow-down
+                        a(href="#").ms-4
+                            i.fa-solid.fa-user
+
+            .slider 
+                .container 
+                    #carouselExampleIndicators.carousel.slide(data-bs-ride='true')
+                        .carousel-indicators
+                            button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                            button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+                            button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+                        .carousel-inner
+                            .carousel-item.active
+                                .info.d-flex.justify-content-evenly.align-items-center
+                                    .text 
+                                        h2 Zay
+                                            span eCommerce
+                                        h3 Tiny and Perfect eCommerce Template
+                                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores nisi non qui esse exercitationem eius. Amet repellendus consectetur aperiam unde eveniet laborum. Praesentium dolore tenetur quaerat doloribus, rem nulla ducimus.
+                                    img.d-block(src='/img/banner_img_01.jpg' alt='...')
+                            .carousel-item
+                                .info.d-flex.justify-content-evenly.align-items-center
+                                    .text 
+                                        h2 Zay 
+                                            span eCommerce
+                                        h3 Tiny and Perfect eCommerce Template
+                                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores nisi non qui esse exercitationem eius. Amet repellendus consectetur aperiam unde eveniet laborum. Praesentium dolore tenetur quaerat doloribus, rem nulla ducimus.
+                                    img.d-block(src='/img/banner_img_02.jpg' alt='...')
+                            .carousel-item
+                                .info.d-flex.justify-content-evenly.align-items-center
+                                    .text 
+                                        h2 Zay
+                                            span eCommerce
+                                        h3 Tiny and Perfect eCommerce Template
+                                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores nisi non qui esse exercitationem eius. Amet repellendus consectetur aperiam unde eveniet laborum. Praesentium dolore tenetur quaerat doloribus, rem nulla ducimus.
+                                    img.d-block(src='/img/banner_img_03.jpg' alt='...')
+                        button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.visually-hidden Previous
+                        button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.visually-hidden Next

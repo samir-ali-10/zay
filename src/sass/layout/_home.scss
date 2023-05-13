@@ -22,6 +22,7 @@
 
         h2 {
             font-size: 3.2rem;
+            padding-bottom: 20px;
         }
 
         ul {
@@ -224,6 +225,116 @@
     }
 }
 
+.information {
+    color: $secondaryBgColor;
+
+    .data {
+        border-bottom: 1px solid #2c3643;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+        gap: 10px;
+
+        .infos {
+            .heading {
+                border-bottom: 1px solid #2c3643;
+
+                h2 {
+                    margin-bottom: 15px;
+                }
+
+                h3 {
+                    font-weight: 200;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .links {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    margin-bottom: 10px;
+                    color: $secondaryBgColor;
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            ul {
+                margin-top: 20px;
+
+                li {
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .contacts {
+        flex-wrap: wrap;
+        .socials {
+            margin-bottom: 30px;
+            a {
+                color: $secondaryBgColor;
+                font-size: 1.5rem;
+                margin-right: 20px;
+                border: 1px solid #2c3643;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                i {
+                    line-height: 50px;
+                }
+            }
+        }
+        .subscribe {
+            #email {
+                background-color: transparent;
+                color: white;
+                border: 1px solid #2c3643;
+                padding: 5px 15px;
+                outline: none;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                &::placeholder {
+                    color: $secondaryBgColor;
+                }
+            }
+            #sub {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                padding: 5px 15px;
+                background-color: $secondaryColor;
+                color: $secondaryBgColor;
+                border: none;
+                outline: none;
+                margin-left: -5px;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #19212b;
+    color: $secondaryBgColor;
+    p {
+        font-size: 1.2rem;
+        span {
+            text-decoration: underline;
+        }
+    }
+}
+
 ///////////////////////////////// Media Queries /////////////////////////////////////////////
 @media (max-width: 992.5px) {
     .landing {
@@ -255,10 +366,10 @@
 @media (max-width: 450px) {
     .features {
         .cards {
-    
+
             .carde {
                 max-width: 300px;
-    
+
                 img {
                     max-width: 300px;
                 }
@@ -268,10 +379,39 @@
 
     .categories {
         .items {
-    
+
             .item {
                 img {
                     max-width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .features {
+        .cards {
+
+            .carde {
+                max-width: 250px;
+
+                img {
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+
+
+    .contacts {
+        .socials {
+            a {
+                font-size: 1rem !important;
+                width: 30px !important;
+                height: 30px !important;
+                i {
+                    line-height: 30px !important;
                 }
             }
         }

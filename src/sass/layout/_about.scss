@@ -1,0 +1,103 @@
+@import "../helpers/variables";
+
+.wrapper {
+    background-color: $secondaryColor;
+    color: white;
+    padding: 30px 0;
+
+    .content {
+        p {
+            font-size: 1.2rem;
+            color: #eee;
+        }
+    }
+
+    .image {
+        img {
+            max-width: 400px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+    }
+}
+
+
+.services {
+    text-align: center;
+    padding: 50px 0;
+    .rowing {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+        gap: 15px;
+        > div {
+            background-color: white;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            padding: 20px;
+            i {
+                color: $secondaryColor;
+                font-size: 4rem;
+            }
+            p {
+                font-size: 1.5rem;
+                text-transform: capitalize;
+                margin-top: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.brands {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e9eef5;
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+        place-items: center;
+        max-width: 75%;
+        margin: auto;
+        position: relative;
+        i {
+            font-size: 1.2rem;
+            color: #bdc9d9;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            &.left {
+                left: -15px;
+            }
+            &.right {
+                right: -15px;
+            }
+        }
+        .logo {
+            img {
+                width: 100px;
+            }
+        }
+    }
+}
+
+
+////////////////////// Media Queries ///////////////////////////
+
+@media (max-width: 800px) {
+    .wrapper {
+        .container {
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media (max-width: 540px) {
+    .wrapper {
+        .image {
+            display: none;
+        }
+    }
+}
