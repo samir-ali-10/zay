@@ -91,52 +91,52 @@
         outline: none;
         display: none;
     }
+}
 
-    .slider {
-        background-color: #efefef;
-        padding-top: 60px;
+.slider {
+    background-color: #efefef;
+    padding-top: 60px;
 
-        .carousel-indicators>* {
-            background-color: $secondaryColor;
-        }
+    .carousel-indicators>* {
+        background-color: $secondaryColor;
+    }
 
-        .carousel-inner {
-            .carousel-item {
-                .info {
-                    .text {
-                        max-width: 30%;
+    .carousel-inner {
+        .carousel-item {
+            .info {
+                .text {
+                    max-width: 30%;
 
-                        h2 {
-                            color: $secondaryColor;
-                            font-size: 2.6rem;
+                    h2 {
+                        color: $secondaryColor;
+                        font-size: 2.6rem;
 
-                            span {
-                                padding-left: 10px;
-                                font-weight: normal;
-                            }
-                        }
-
-                        h3 {
+                        span {
+                            padding-left: 10px;
                             font-weight: normal;
                         }
-
-                        p {
-                            font-size: 1.1rem;
-                            color: #777;
-                        }
                     }
 
-                    img {
-                        width: 500px;
+                    h3 {
+                        font-weight: normal;
                     }
+
+                    p {
+                        font-size: 1.1rem;
+                        color: #777;
+                    }
+                }
+
+                img {
+                    width: 500px;
                 }
             }
         }
+    }
 
-        .carousel-control-next-icon,
-        .carousel-control-prev-icon {
-            color: $secondaryColor !important;
-        }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        color: $secondaryColor !important;
     }
 }
 

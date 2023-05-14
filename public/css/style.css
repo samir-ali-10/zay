@@ -115,36 +115,37 @@
   outline: none;
   display: none;
 }
-.landing .slider {
+
+.slider {
   background-color: #efefef;
   padding-top: 60px;
 }
-.landing .slider .carousel-indicators > * {
+.slider .carousel-indicators > * {
   background-color: #59ab6e;
 }
-.landing .slider .carousel-inner .carousel-item .info .text {
+.slider .carousel-inner .carousel-item .info .text {
   max-width: 30%;
 }
-.landing .slider .carousel-inner .carousel-item .info .text h2 {
+.slider .carousel-inner .carousel-item .info .text h2 {
   color: #59ab6e;
   font-size: 2.6rem;
 }
-.landing .slider .carousel-inner .carousel-item .info .text h2 span {
+.slider .carousel-inner .carousel-item .info .text h2 span {
   padding-left: 10px;
   font-weight: normal;
 }
-.landing .slider .carousel-inner .carousel-item .info .text h3 {
+.slider .carousel-inner .carousel-item .info .text h3 {
   font-weight: normal;
 }
-.landing .slider .carousel-inner .carousel-item .info .text p {
+.slider .carousel-inner .carousel-item .info .text p {
   font-size: 1.1rem;
   color: #777;
 }
-.landing .slider .carousel-inner .carousel-item .info img {
+.slider .carousel-inner .carousel-item .info img {
   width: 500px;
 }
-.landing .slider .carousel-control-next-icon,
-.landing .slider .carousel-control-prev-icon {
+.slider .carousel-control-next-icon,
+.slider .carousel-control-prev-icon {
   color: #59ab6e !important;
 }
 
@@ -613,6 +614,12 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+
+@media (max-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
