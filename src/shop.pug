@@ -1,0 +1,244 @@
+html 
+    head 
+        include pug/headTags
+    body 
+        .heading.special_bg.p-2
+            .container.d-flex.justify-content-between.align-items-center
+                .infos
+                    a(href='#')
+                        i.fa-solid.fa-envelope.pe-2
+                        |     info@company.com
+                    a(href="#").ms-5
+                        i.fa-solid.fa-phone.pe-2
+                        | 010-203-3493
+                .socials
+                    a(href="#")
+                        i.fa-brands.fa-facebook-f
+                    a(href="#")
+                        i.fa-brands.fa-instagram
+                    a(href="#")
+                        i.fa-brands.fa-twitter
+                    a(href="#")
+                        i.fa-brands.fa-linkedin
+
+        // Landing Page //
+        .landing.pt-3
+            .container 
+                nav.d-flex.justify-content-between.align-items-center
+                    h2.secondary_color Zay 
+                    .navigation 
+                        i.fa-solid.fa-bars.menu
+                        ul.d-flex.justify-content-between
+                            li
+                                a(href="index.html") home
+                            li
+                                a(href="about.html") about
+                            li
+                                a(href="#") shop
+                            li
+                                a(href="contact.html") contact
+                    .profile.d-flex.justify-content-end
+                        a(href="#")
+                            i.fa-solid.fa-magnifying-glass
+                        a(href="#").ms-4
+                            i.fa-solid.fa-cart-arrow-down
+                        a(href="#").ms-4
+                            i.fa-solid.fa-user
+
+        .shop_categories.mt-5.mb-5 
+            .container.d-flex.justify-content-between
+                .categories
+                    h2.text-capitalize categories 
+                    ul.text-capitalize
+                        li
+                            a(href="#") gender 
+                                i.fa-solid.fa-angle-down(style='color: #ffffff;')
+                        li
+                            a(href="#") sale
+                                i.fa-solid.fa-angle-down(style='color: #ffffff;')
+                        li
+                            a(href="#") product
+                                i.fa-solid.fa-angle-down(style='color: #ffffff;')
+                .containing 
+                    .heading.d-flex.justify-content-between.mb-4 
+                        h2.text-capitalize all men's women's
+                        input#featured(type="text", name="featured", placeholder="Featured")
+                    .cards 
+                        .card
+                            img(src="/img/shop_01.jpg", alt="")
+                            .content.p-4 
+                                h4 item one 
+                                p M/L/XL/XXL
+                                .cont.text-center
+                                    .stars 
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                    p $250.00
+                        .card
+                            img(src="/img/shop_02.jpg", alt="")
+                            .content.p-4 
+                                h4 item one 
+                                p M/L/XL/XXL
+                                .cont.text-center
+                                    .stars 
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                    p $250.00
+                        .card
+                            img(src="/img/shop_10.jpg", alt="")
+                            .content.p-4 
+                                h4 item one 
+                                p M/L/XL/XXL
+                                .cont.text-center
+                                    .stars 
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                    p $250.00
+                        .card
+                            img(src="/img/shop_04.jpg", alt="")
+                            .content.p-4
+                                h4 item one 
+                                p M/L/XL/XXL
+                                .cont.text-center
+                                    .stars 
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                    p $250.00
+                        .card
+                            img(src="/img/shop_05.jpg", alt="")
+                            .content.p-4
+                                h4 item one 
+                                p M/L/XL/XXL
+                                .cont.text-center
+                                    .stars 
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                    p $250.00
+                        .card
+                            img(src="/img/shop_06.jpg", alt="")
+                            .content.p-4
+                                h4 item one 
+                                p M/L/XL/XXL
+                                .cont.text-center
+                                    .stars 
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                    p $250.00
+                        .card
+                            img(src="/img/shop_07.jpg", alt="")
+                            .content.p-4
+                                h4 item one 
+                                p M/L/XL/XXL
+                                .cont.text-center
+                                    .stars 
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #f7d918;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                        i.fa-solid.fa-star(style='color: #8a8a8a;')
+                                    p $250.00
+                    .buttons.d-flex.justify-content-end
+                        .one 
+                            button.active 1
+                        .two 
+                            button 2
+                        .three
+                            button 3
+        
+        .brands 
+            .container 
+                .special_heading 
+                    h2 our brands 
+                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolore nisi suscipit?
+                .logos.pt-5.pb-4
+                    i.fa-solid.fa-angle-left.left
+                    .logo 
+                        img(src="/img/brand_01.png", alt="brand_01")
+                    .logo 
+                        img(src="/img/brand_02.png", alt="brand_02")
+                    .logo 
+                        img(src="/img/brand_03.png", alt="brand_03")
+                    .logo 
+                        img(src="/img/brand_04.png", alt="brand_04")
+                    i.fa-solid.fa-angle-right.right
+
+        .information.special_bg.pt-5.pb-5
+            .container 
+                .data
+                    .infos 
+                        .heading 
+                            h2.secondary_color.text-capitalize zay shop 
+                        .links 
+                            a(href="#")
+                                i.fa-solid.fa-location-dot
+                                | 123 NEWYORK Street, 32 Avenue
+                            a(href="#")
+                                i.fa-solid.fa-phone
+                                | 010-012-2344
+                            a(href="#") 
+                                i.fa-solid.fa-envelope
+                                | info@company.com
+                    .infos 
+                        .heading
+                            h3.text-capitalize products
+                        ul
+                            li luxury
+                            li sports wear
+                            li men's shoes
+                            li women's shoes
+                            li popular dress
+                            li gym accessories
+                            li sport shoes
+                    .infos 
+                        .heading 
+                            h3.text-capitalize further info
+                        ul
+                            li home
+                            li about us
+                            li shop locations
+                            li FAQs
+                            li contact
+                .contacts.pt-4.pb-4.d-flex.justify-content-between.align-items.center 
+                    .socials.d-flex
+                        a(href="#")
+                            i.fa-brands.fa-facebook-f
+                        a(href="#")
+                            i.fa-brands.fa-instagram
+                        a(href="#")
+                            i.fa-brands.fa-twitter
+                        a(href="#")
+                            i.fa-brands.fa-linkedin
+                    .subscribe 
+                        form(action="#") 
+                            input#email(type="email", name="email", placeholder="Email Address")
+                            input#sub(type="submit", value="Subscribe")
+        footer.pt-4.pb-4
+            .container 
+                p.text-capitalize
+                    | copyright &#169; 2021 company name | designed by
+                    span  samir
+        button#myBtn(onclick='topFunction()' title='Go to top') 
+            i.fa-solid.fa-angle-up
+
+
+        script(src="js/bootstrap.bundle.min.js") 
+        script(src="js/main.js") 
+

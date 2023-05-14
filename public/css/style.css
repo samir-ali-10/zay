@@ -428,6 +428,96 @@ footer p span {
     display: none;
   }
 }
+.shop_categories .categories {
+  width: 30%;
+  margin-right: 20px;
+}
+.shop_categories .categories h2 {
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.shop_categories .categories ul li {
+  margin-bottom: 15px;
+}
+.shop_categories .categories ul li a {
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.shop_categories .categories ul li a i {
+  font-size: 0.9rem;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 50px;
+}
+.shop_categories .containing {
+  width: 70%;
+}
+.shop_categories .containing h2 {
+  font-weight: 200;
+}
+.shop_categories .containing input {
+  padding: 0 15px;
+  font-size: 1.3rem;
+  border: 1px solid #eee;
+  outline: none;
+  opacity: 1;
+}
+.shop_categories .containing input:focus::placeholder {
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.shop_categories .containing input::placeholder {
+  color: black;
+}
+.shop_categories .containing .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.shop_categories .containing .cards .card {
+  box-shadow: 5px 5px 10px 5px #c1c1c1;
+  font-size: 1.4rem;
+}
+.shop_categories .containing .cards .card .content h4 {
+  text-transform: capitalize;
+  font-weight: 200;
+}
+.shop_categories .containing .cards .card .content p {
+  font-weight: 200;
+}
+.shop_categories .containing .cards .card .content .cont .stars {
+  margin-bottom: 10px;
+}
+.shop_categories .containing .cards .card .content .cont .stars i {
+  margin-right: 5px;
+}
+.shop_categories .containing .buttons button {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  box-shadow: 5px 5px 10px -1px #c1c1c1;
+  border: none;
+}
+.shop_categories .containing .buttons button.active {
+  background-color: #59ab6e;
+  color: white;
+}
+
 .contact_wrapper {
   margin-bottom: 100px;
 }
