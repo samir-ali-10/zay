@@ -61,7 +61,7 @@
   box-shadow: 5px 5px 10px 5px #c1c1c1;
 }
 .landing nav > * {
-  width: 30%;
+  width: calc(90% / 3);
 }
 .landing nav h2 {
   font-size: 3.2rem;
@@ -325,6 +325,7 @@ footer p span {
   .features .cards .carde img {
     max-width: 300px;
   }
+
   .categories .items .item img {
     max-width: 250px;
   }
@@ -336,6 +337,7 @@ footer p span {
   .features .cards .carde img {
     max-width: 250px;
   }
+
   .contacts .socials a {
     font-size: 1rem !important;
     width: 30px !important;
@@ -614,5 +616,3 @@ ul {
   list-style: none;
   padding: 0;
 }
-
-/*# sourceMappingURL=style.css.map */

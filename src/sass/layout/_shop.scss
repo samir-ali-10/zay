@@ -113,3 +113,16 @@
         }
     }
 }
+
+@media (max-width: 560px) {
+    .shop_categories {
+        .containing {
+            .heading {
+                flex-direction: column;
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

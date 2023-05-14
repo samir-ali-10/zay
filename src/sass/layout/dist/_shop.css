@@ -87,3 +87,12 @@
   background-color: #59ab6e;
   color: white;
 }
+
+@media (max-width: 560px) {
+  .shop_categories .containing .heading {
+    flex-direction: column;
+  }
+  .shop_categories .containing .heading h2 {
+    margin-bottom: 20px;
+  }
+}
