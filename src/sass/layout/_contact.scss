@@ -1,0 +1,91 @@
+@import "../helpers/variables";
+
+.contact_wrapper {
+    margin-bottom: 100px;
+}
+
+
+
+
+.map {
+    margin-top: 50px;
+
+    iframe {
+        width: 100%;
+    }
+}
+
+.talk {
+    form {
+        .required {
+            display: flex;
+            justify-content: space-between;
+
+            &>div {
+                display: flex;
+                flex-direction: column;
+
+                & input {
+                    width: 300px;
+                }
+            }
+        }
+
+        .subject,
+        .message {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & label {
+            margin-bottom: 10px;
+        }
+
+        &>div {
+            margin-bottom: 20px;
+
+            input:not(input[type="submit"]),
+            textarea {
+                padding: 5px 15px;
+                border: 1px solid #eee;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+                outline: none;
+            }
+        }
+
+        .submit {
+            text-align: right;
+
+            input {
+                font-size: 1.4rem;
+                color: white;
+                background-color: $secondaryColor;
+                padding: 5px 15px;
+                border: none;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 772px) {
+    .talk {
+        form {
+            .required {
+                flex-direction: column;
+                & > div {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

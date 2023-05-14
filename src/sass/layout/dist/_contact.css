@@ -1,0 +1,68 @@
+.contact_wrapper {
+  margin-bottom: 100px;
+}
+
+.map {
+  margin-top: 50px;
+}
+.map iframe {
+  width: 100%;
+}
+
+.talk form .required {
+  display: flex;
+  justify-content: space-between;
+}
+.talk form .required > div {
+  display: flex;
+  flex-direction: column;
+}
+.talk form .required > div input {
+  width: 300px;
+}
+.talk form .subject,
+.talk form .message {
+  display: flex;
+  flex-direction: column;
+}
+.talk form label {
+  margin-bottom: 10px;
+}
+.talk form > div {
+  margin-bottom: 20px;
+}
+.talk form > div input:not(input[type=submit]),
+.talk form > div textarea {
+  padding: 5px 15px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  outline: none;
+}
+.talk form .submit {
+  text-align: right;
+}
+.talk form .submit input {
+  font-size: 1.4rem;
+  color: white;
+  background-color: #59ab6e;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+@media (max-width: 772px) {
+  .talk form .required {
+    flex-direction: column;
+  }
+  .talk form .required > div {
+    margin-bottom: 20px;
+  }
+}

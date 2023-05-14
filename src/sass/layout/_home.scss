@@ -2,7 +2,6 @@
 
 .heading {
     font-size: .8rem;
-
     a {
         color: $secondaryBgColor;
     }
@@ -15,6 +14,7 @@
 }
 
 .landing {
+    box-shadow: 5px 5px 10px 5px #c1c1c1;
     nav {
         &>* {
             width: calc(90% / 3);
