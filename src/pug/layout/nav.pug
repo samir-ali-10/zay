@@ -1,3 +1,4 @@
+-var navItems = ["home","about","contact","shop"];
 .heading.special_bg.p-2
     .container.d-flex.justify-content-between.align-items-center
         .infos
@@ -25,14 +26,9 @@
             .navigation 
                 i.fa-solid.fa-bars.menu
                 ul.d-flex.justify-content-between
-                    li
-                        a(href="#") home
-                    li
-                        a(href="#") about
-                    li
-                        a(href="#") shop
-                    li
-                        a(href="#") contact
+                    each item in navItems  
+                        li 
+                            a(href= (item === 'home' ? 'index.html' : item + ".html")) #{item} 
             .profile.d-flex.justify-content-end
                 a(href="#")
                     i.fa-solid.fa-magnifying-glass
