@@ -60,7 +60,7 @@
                 -moz-transition: .3s;
                 -ms-transition: .3s;
                 -o-transition: .3s;
-}
+            }
 
             &::placeholder {
                 color: black;
@@ -72,9 +72,11 @@
             grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
             gap: 15px;
             margin-bottom: 30px;
+
             img.hide {
                 display: none;
             }
+
             .card {
                 box-shadow: 5px 5px 10px 5px #c1c1c1;
                 font-size: 1.4rem;
@@ -101,6 +103,7 @@
                 }
             }
         }
+
         .buttons {
             button {
                 background-color: transparent;
@@ -108,6 +111,7 @@
                 height: 60px;
                 box-shadow: 5px 5px 10px -1px #c1c1c1;
                 border: none;
+
                 &.active {
                     background-color: $secondaryColor;
                     color: white;
@@ -119,11 +123,20 @@
 
 @media (max-width: 560px) {
     .shop_categories {
-        .containing {
-            .heading {
-                flex-direction: column;
-                h2 {
-                    margin-bottom: 20px;
+        .container {
+            flex-direction: column;
+            .categories {
+                width: 100%;
+            }
+            .containing {
+                width: 100%;
+                margin-top: 50px;
+                .heading {
+                    flex-direction: column;
+
+                    h2 {
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }

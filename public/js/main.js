@@ -67,7 +67,3 @@ var myInterval = setInterval(function () {
     getRepos();
     clearInterval(myInterval);
 }, 3000)
-
-// function stopInterval() {
-//     clearInterval(myInterval);
-// }

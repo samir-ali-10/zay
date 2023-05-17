@@ -46,6 +46,4 @@ var myInterval = setInterval(function () {
   itemsCard.innerHTML = " ";
   getRepos();
   clearInterval(myInterval);
-}, 3000); // function stopInterval() {
-//     clearInterval(myInterval);
-// }
+}, 3000);

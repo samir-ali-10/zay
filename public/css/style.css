@@ -523,10 +523,20 @@ footer p span {
 }
 
 @media (max-width: 560px) {
-  .shop_categories .containing .heading {
+  .shop_categories .container {
     flex-direction: column;
   }
-  .shop_categories .containing .heading h2 {
+  .shop_categories .container .categories {
+    width: 100%;
+  }
+  .shop_categories .container .containing {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .shop_categories .container .containing .heading {
+    flex-direction: column;
+  }
+  .shop_categories .container .containing .heading h2 {
     margin-bottom: 20px;
   }
 }
