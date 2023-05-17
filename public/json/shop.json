@@ -1,0 +1,51 @@
+[
+    {
+        "image": "./img/shop_01.jpg",
+        "header": "item one",
+        "description": "M/L/XL/XXL",
+        "price": "$250.00"
+        
+    },
+    {
+        "image": "./img/shop_02.jpg",
+        "header": "item two",
+        "description": "M/L/XL/XXL",
+        "price": "$250.00"
+        
+    },
+    {
+        "image": "./img/shop_10.jpg",
+        "header": "item three",
+        "description": "M/L/XL/XXL",
+        "price": "$250.00"
+        
+    },
+    {
+        "image": "./img/shop_04.jpg",
+        "header": "item four",
+        "description": "M/L/XL/XXL",
+        "price": "$250.00"
+        
+    },
+    {
+        "image": "./img/shop_05.jpg",
+        "header": "item five",
+        "description": "M/L/XL/XXL",
+        "price": "$250.00"
+        
+    },
+    {
+        "image": "./img/shop_06.jpg",
+        "header": "item six",
+        "description": "M/L/XL/XXL",
+        "price": "$250.00"
+        
+    },
+    {
+        "image": "./img/shop_07.jpg",
+        "header": "item seven",
+        "description": "M/L/XL/XXL",
+        "price": "$250.00"
+        
+    }
+]

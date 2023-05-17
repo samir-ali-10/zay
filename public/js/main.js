@@ -26,3 +26,45 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+////////////////////////////////////////////////////////////////
+
+let itemsCard = document.querySelector(".shop_categories .containing .cards");
+
+
+
+function getRepos() {
+
+
+    fetch(`./json/shop.json`)
+
+        .then((response) => response.json())
+
+        .then((repositories) => {
+
+            repositories.forEach((repo) => {
+                itemsCard.innerHTML +=
+                    `<div class="card"><img src="${repo.image}" alt="">
+                    <div class="content p-4"> 
+                    <h4>${repo.header}</h4>
+                    <p>${repo.description}</p>
+                            <div class="cont text-center">
+                            <div class="stars"> <i class="fa-solid fa-star"     style="color: #f7d918;"></i><i class="fa-solid fa-star" style="color: #f7d918;"></i><i class="fa-solid fa-star" style="color: #f7d918;"></i><i class="fa-solid fa-star" style="color: #8a8a8a;"></i><i class="fa-solid fa-star" style="color: #8a8a8a;"></i> </div>
+                                <p>${repo.price}</p>
+                                </div>
+                                </div>
+                                </div>`
+            })
+
+        })
+
+}
+
+let myInterval = setInterval(function () {
+    itemsCard.innerHTML = " ";
+    getRepos();
+}, 3000)
+
+// function stopInterval() {
+//     clearInterval(myInterval);
+// }
