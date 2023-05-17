@@ -59,6 +59,9 @@
   gap: 15px;
   margin-bottom: 30px;
 }
+.shop_categories .containing .cards img.hide {
+  display: none;
+}
 .shop_categories .containing .cards .card {
   box-shadow: 5px 5px 10px 5px #c1c1c1;
   font-size: 1.4rem;

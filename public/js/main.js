@@ -29,7 +29,9 @@ function topFunction() {
 
 ////////////////////////////////////////////////////////////////
 
-let itemsCard = document.querySelector(".shop_categories .containing .cards");
+var itemsCard = document.querySelector(".shop_categories .containing .cards"),
+    loader = document.querySelector(".shop_categories .containing .cards img"),
+    counter = 0;
 
 
 
@@ -60,9 +62,10 @@ function getRepos() {
 
 }
 
-let myInterval = setInterval(function () {
+var myInterval = setInterval(function () {
     itemsCard.innerHTML = " ";
     getRepos();
+    clearInterval(myInterval);
 }, 3000)
 
 // function stopInterval() {
